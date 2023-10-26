@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siblings Traversal</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // $("p").siblings().css({"color":"blue","border":"2px solid pink"});
+            // // siblings for a particular element
+            // $("p").siblings("h2").css({"color":"yellow","border":"2px solid meron"});
+            // To find the next siblings of a particular sibling using next()
+            // $("h2").next().css({"color":"lightgreen","border":"2px solid violet"});
+            // to know the next all siblings we use nextAll()
+            // $("p").nextAll().css({"color":"orange","border":"2px solid black"});
+            // Using nextUntil method
+            // $("p").nextUntil("h3").css({"color":"orange","border":"2px solid black"});
+            // Uisng previous ,previousAll and previous until
+            // $("h1").prev().css({"color":"orange","border":"2px solid black"});
+            // $("h3").prevAll().css({"color":"orange","border":"2px solid black"});
+            $("h3").prevUntil("p").css({"color":"orange","border":"2px solid black"});
+
+
+        });
+    </script>
+    <style>
+        .siblings *{
+            display:block;
+            padding:"6px";
+            margin:"20px";
+            color:black;
+            border:2px solid mediumaquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="siblings"> (siblings container)
+        <p>eldest</p>
+        <h1>elder</h1>
+        <h2>middlest one</h2>
+        <h3>youngest</h3>
+        <p>younger</p>
+    </div>
+</body>
+</html>

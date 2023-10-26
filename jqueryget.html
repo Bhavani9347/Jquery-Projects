@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Get</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+            // For get html using text method
+            $("#btn").click(function(){
+                alert("Text:"+ $("#demo").text());
+            });
+            // for get html using html method(returns the html element including with the tag which is marked up)
+            $("#btnbtn").click(function(){
+                alert("HTML:"+$("#demo").html());
+            });        
+        });
+    </script>
+    <!-- for returning the value method using get html -->
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                alert("Value:"+$("#basic").val());
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id="demo">Excercise on Jquery Get HTML</p>
+    <button id="btn">Show text</button>
+    <br>
+    <button id="btnbtn">Show HTML</button>
+    <br>
+    <!-- for value mthod using get html -->
+    Name:<input type="text" id="basic" name="Bhavani" value="Bhavani">
+    <br>
+    <button>Displaying the value</button>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set content using text,value,html</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#p1").text("Hey hello!");
+            });
+            $("#btn2").click(function(){
+                $("#p2").html("Hello Html");
+            });
+            $("#btn3").click(function(){
+                $("#p3").val("Doraemon");
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id="p1">Set content will assign the value to the variable</p>
+    <p id="p2">And the set content can be used by 3types :text,html,value</p>
+    <p>input field<input id="p3" type="text" value="Naruto"></p>
+    <button id="btn1">Set text</button>
+    <button id="btn2">Set html</button>
+    <button id="btn3">Set value</button>
+</body>
+</html>

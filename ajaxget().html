@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get() used to get the data from the server</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $.get("demo_test.asp",function(data,status){
+                    alert("Data:" +data+ "status:" +status);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <button>Get is used to retrieve the data from the server but it may caches the data</button>
+</body>
+</html>

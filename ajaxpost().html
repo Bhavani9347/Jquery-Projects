@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementing the post method</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("demo_test_post.asp",
+                {
+                    name:"santhosh",
+                    city:"hyderabad"
+                },
+                function(data,status){
+                  alert("Data" +data+ "Status" +status);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <button>Post method is used to request the data from the server and then it will send back the data to the server</button>  
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtering in Jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // $("div").first().css({"background-color":"purple"});
+            // $("div").last().css({"background-color":"purple"});
+            // $("p").filter(".p1").css({"background-color":"purple"});
+            $("p").not(".p1").css({"background-color":"purple"});
+        });
+    </script>
+</head>
+<body>
+    <h1>Welcome to Filters methods ("first,last,not,filter")</h1>
+    <div style="border:2px solid white">
+        <p class="p1">Excercise on filter method </p>
+        <p class="p1">So that it filter only to that particular method</p>
+    </div>
+    <div style="border:2px solid black">
+        <p>Excercise on filter method </p>
+        <p>So that it filter only to that particular method</p>
+    </div>
+</body>
+</html>

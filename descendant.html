@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant Traversal</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // $("div").children().css({"color":"orange","border":"1px solid black"});
+            // Coloring only for the first child
+            // $("div").children("p.child1").css({"color":"orange","border":"1px solid black"});
+            // Coloring for only particular tag using find
+            // $("div").find("span").css({"color":"orange","border":"1px solid black"});
+            $("div").find("*").css({"color":"orange","border":"1px solid black"});
+        });
+    </script>
+    <style>
+        .Descendant *{
+            display:block;
+            padding:"5px";
+            margin:"15px";
+            color:aquamarine;
+            border:3px solid hotpink;
+        }
+    </style>
+</head>
+</head>
+<body>
+    <div class="Descendant">(parent)
+        <p class=child1>First Child
+            <span>span</span>
+        </p>
+        <p class=child2>Second child
+            <span>span</span>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noconflict method</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $.noConflict();
+        jQuery(document).ready(function($){
+            $("button").click(function(){
+                $("#p2").text("If in case to use the shortcut $ for the entire code then it is mandatory to specify it in the function");
+            });
+        });
+    </script>
+</head>
+<body>
+    <p is="p2">This is just a simple para</p>
+    <button>Click here to use the $ in the function whenever you want to use for the enter blcok of code</button>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+    </script>
+    <script>
+        // By using click function we can hide the text by clicking the text
+        $(document).ready(function(){
+            $("p").click(function(){
+                $(this).hide();
+            });
+        });
+    </script>
+     <script>
+        // By using double click function we can hide the text by clicking the text
+        $(document).ready(function(){
+            $("h1").dblclick(function(){
+                $(this).hide();
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <p>If you click on me, I will disappear.</p>
+    <p>Click me away!</p>
+    <p>Click me too!</p>
+<!-- double click -->
+<h1>By double tap the text will be disappear</h1>
+<h1>If you tap me double ! I will die</h1>
+<h1>See you</h1>
+</body>
+</html>

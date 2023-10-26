@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p:first").hide();
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum exercitationem culpa consectetur debitis praesentium accusantium deserunt numquam delectus! Iure, ea.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, aperiam.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <button>Click here to hide the first heading</button>
+</body>
+</html>

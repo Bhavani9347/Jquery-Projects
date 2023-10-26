@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent until</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("span").parentsUntil("div").css({"border":"2px solid blue","color":"red"});
+            // $("container").child("div").css({"border":"2px solid blue","color":"red"});
+         });   
+    </script>
+    <style>
+        .container *{
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">(great grand-parent)
+        <div style="width:600px">(grand -parent)
+            <ul>(real parent)
+                <li>(birth)
+                    <span>Span</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementing noconflict method</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $.noConflict();
+        jQuery(document).ready(function(){
+            jQuery("button").click(function(){
+                jQuery("#p1").text("It is in the text format");
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id="p1">This is a paragraph</p>
+    <button>In order to avoid the naming conflicts we use noConflict() to resolve it</button>
+</body>
+</html>

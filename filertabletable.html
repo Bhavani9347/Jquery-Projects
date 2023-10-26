@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Filtering table</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        table{
+                border-collapse: collapse;
+                width:100%;
+        }
+    </style>
+    <script>
+       $(document).ready(function(){
+        $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function(){
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+    </script>
+</head>
+<body>
+    <h1>Implementing the filterable table</h1>
+    <p>Using this filerable/search table we can the things easily</p>
+    <input id="myinput" type="text" placeholder="search here">
+    <table>
+        <thead>
+            <tr>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>bvn</td>
+                <td>reddy</td>
+                <td>bvnreddy@gmail.com</td>
+            </tr>
+            <tr>
+                <td>snoopy</td>
+                <td>naidu</td>
+                <td>snoopy@gmail.com</td>
+            </tr>
+            <tr>
+                <td>romika</td>
+                <td>reddy</td>
+                <td>romika@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

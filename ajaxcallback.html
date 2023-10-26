@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX callback</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#demo").load("demo_test.txt",function(responseTxt,statusTxt,xhr){
+                    if(statusTxt == "success")
+                    alert("Loaded successfully");
+                    if(statusTxt == "error")
+                    alert("Not loaded successfully");              
+                });
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div id="demo">Callback parameter includes:responsetext,statustext,xhr</div>
+    <button>CLick here</button>
+</body>
+</html>

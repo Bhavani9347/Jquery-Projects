@@ -1,0 +1,1 @@
+<h1>Implementing the get method</h1>

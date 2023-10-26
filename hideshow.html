@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide and Show</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("h1").hide();
+            });
+            $("#show").click(function(){
+                $("h1").show();
+            });
+        });
+    </script>
+    <!-- Script for the parameters of hide and callback -->
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").hide(2000);
+            });
+        });
+    </script>
+    <!-- Script for the toggle -->
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("h6").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Excercise for hide the content and show the content</h1>
+    <button id="hide">HIDE</button>
+    <button id="show">SHOW</button><br>
+    <!-- Hide and show with parameters like speed and callback -->
+    <p>This the first paragraph </p>
+    <p>the next paragraph</p>
+    <p>The last paragraph</p>
+    <button>"button"</button><br>
+    <br>
+    <!-- Toggle:We can hide and show the content using toggle  -->
+    <h6>Excercise on toggle in jquery</h6>
+    <h6>Instead of creating multiple buttons for hiding and showing ,its better to use toggle</h6>
+    <button>"toggle button"</button>
+</body>
+</html>

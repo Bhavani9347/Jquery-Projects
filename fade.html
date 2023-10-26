@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+    </script>
+    <!-- Script for fadein -->
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#div1").fadeIn("slow");
+                $("#div2").fadeIn(2000);
+            });
+        });
+    </script>
+    <!-- Script for fade out -->
+    <script>
+         $(document).ready(function(){
+            $("button").click(function(){
+                $("#div1").fadeOut("slow");
+                $("#div2").fadeOut(2000);
+            });
+        });  
+    </script>
+    <!-- Script for toggle -->
+    <script>
+        $(document).ready(function(){
+           $("button").click(function(){
+               $("#div1").toggle("slow");
+               $("#div2").toggle(2000);
+           });
+       });
+    </script>
+</head>
+<body>
+    <!-- FADEIN -->
+    <button>Click the button to see the fadeIn</button>
+    <br>
+    <div id="div1" style="width:100px;height:100px; display:none;background-color: blue;" >
+    </div>
+    <br>
+    <div id="div2" style="width:100px;height:100px; display:none; background-color: crimson;">
+    </div>
+    <!-- FADEOUT -->
+    <button>Click the button to see fadeOut</button>
+    <br>
+    <div id="div1" style="width:100px;height:100px; display:none;background-color: blue;" >
+    </div>
+    <br>
+    <div id="div2" style="width:100px;height:100px; display:none; background-color: crimson;">
+    </div>
+    <!-- Instead of fadein and fadeout use toggle -->
+    <button>Click the button to see toggle</button>
+    <br>
+    <div id="div1" style="width:100px;height:100px; display:none;background-color: blue;" >
+    </div>
+    <br>
+    <div id="div2" style="width:100px;height:100px; display:none; background-color: crimson;">
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slides</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(".slidedemo").click(function(){
+                $(".slide1demo").slideToggle("slow");
+            });
+        });
+    </script>
+    <style>
+        .slidedemo,.slide1demo{
+            padding:20px;
+            background-color: darkorange;
+            border-color: black;
+            text-align:center;
+        }
+        .slide1demo{
+            padding:40px;
+            background-color:blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <div class="slidedemo">Click the slide to see the down content</div>
+    <div class="slide1demo">welcome to slide in jquery</div>
+</body>
+</html>
